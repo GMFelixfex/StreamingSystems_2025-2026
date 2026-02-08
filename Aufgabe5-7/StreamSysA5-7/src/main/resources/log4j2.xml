@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!--
+        Set the root logger to INFO level and add the console appender. This will log all messages at INFO level and above to the console.
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+
+        Set the logger for the Apache Beam Direct Runner to WARN level. This will suppress INFO and DEBUG messages from the Direct Runner, which can be very verbose.
+        <Logger name="org.apache.beam.runners.direct" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        -->
+    </Loggers>
+</Configuration>
